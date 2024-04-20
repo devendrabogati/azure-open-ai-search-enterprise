@@ -189,7 +189,7 @@ try:
             st.selectbox("Language", [None] + list(available_languages.keys()), key='translation_language')
 
 
-    question = st.text_input("Azure OpenAI Semantic Answer", value=st.session_state['askedquestion'], key="input"+str(st.session_state ['input_message_key']), on_change=questionAsked)
+    question = st.text_input("Compunnel Azure OpenAI Semantic Answer", value=st.session_state['askedquestion'], key="input"+str(st.session_state ['input_message_key']), on_change=questionAsked)
 
     # Answer the question if any
     if st.session_state.askedquestion != '':
